@@ -2,7 +2,6 @@
 possible combinations of the integers that produce the target sum """
 import datetime
 
-impirt datetime
 def subset_sum(numbers, target, subset=[], results=[]):
 
     # check if the sub set sum is equals to target
