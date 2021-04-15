@@ -1,6 +1,8 @@
 """This is a sample Python script to find all
 possible combinations of the integers that produce the target sum """
+import datetime
 
+impirt datetime
 def subset_sum(numbers, target, subset=[], results=[]):
 
     # check if the sub set sum is equals to target
@@ -19,12 +21,12 @@ def subset_sum(numbers, target, subset=[], results=[]):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10]
-    """, 11, 12, 13 ,14, 15, 16, 17, 18, 19, 20,
-            21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 35, 37,38, 39, 40,
-            41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
-            61, 62, 63, 64, 65, 66]"""
+
     target = 12
+    start = datetime.datetime.now()
     subsets = subset_sum(nums, target)
+    end = datetime.datetime.now() - start
     print(subsets)
+    print(end)
     print("There are {} distinct combinations for the sum {}.".format(len(subsets), target))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
